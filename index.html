@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://unpkg.com/ionicons@4.4.8/dist/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <title>Oliver Sjölind</title>
@@ -17,7 +16,7 @@
 
     <!------------back to top button------------->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <ion-icon name="arrow-round-up"></ion-icon>
+        <ion-icon id="arrow-up" name="arrow-round-up"></ion-icon>
     </button>
 
     <!-- Header (namn) -->
@@ -47,7 +46,7 @@
 
     <!-- Projects -->
 
-    <section id="projects" class="">
+    <section id="projects" class="d-flex flex-column justify-content-center">
 
         <h2 class="text-center">Projects</h2>
 
@@ -75,7 +74,7 @@
             </a>
         </div>
 
-        <a href="https://codepen.io/oliver02/pen/yRMwre?editors=1100">
+        <a href="https://codepen.io/oliver02/pen/yRMwre?editors=1100" target="_blank">
             <div class="carousel-item">
                 <img class="d-block w-100" src="Pics/optima frågeformulär.PNG" alt="Third slide">
         </a>
@@ -111,7 +110,7 @@
                 <ion-icon name="logo-github">
             </a></ion-icon>
 
-            <a href="">
+            <a href="https://www.instagram.com/oliver_sjolind/" target="_blank">
                 <ion-icon name="logo-instagram">
             </a></ion-icon>
 
@@ -139,12 +138,14 @@
             }
         }
 
-        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
+
+    <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+
 </body>
 
 </html>
